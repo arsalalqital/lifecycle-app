@@ -16,7 +16,7 @@ class NewsSearch extends Component {
 
   fetchNews = () => {
     fetch(
-      `https://newsapi.org/v2/everything?apiKey=5d8c9716e2b648958bafb593a1a90ef2&q=${this.state.searchTerm}`
+      `/.data.json`
     )
       .then((response) => response.json())
       .then((data) => {
